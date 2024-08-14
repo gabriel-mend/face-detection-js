@@ -7,6 +7,7 @@ async function startVideo() {
   video.srcObject = videoStream
 }
 
+
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri('./face-api.js/models'),
   faceapi.nets.faceLandmark68Net.loadFromUri('./face-api.js/models'),
